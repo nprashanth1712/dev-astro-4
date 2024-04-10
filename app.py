@@ -3,7 +3,7 @@ from openai import OpenAI
 import requests
 import os
 import time
-from tools import tools
+from tools2 import tools
 from flask import Flask, request, Response, session
 from functions import *
 import json
@@ -76,7 +76,7 @@ function_dispatch_table = {
      # Add other functions here as needed
 }
 
-assistant_id = "asst_hD345upL63GYH0rvM6ssV1vC"  # Use your actual assistant ID
+assistant_id = "asst_Ujf15gaT8n1WjySC0pHbJ2sU"  # Use your actual assistant ID
 my_updated_assistant = client.beta.assistants.update(
    assistant_id,
    tools=tools
